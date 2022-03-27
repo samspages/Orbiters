@@ -50,11 +50,6 @@ public class Orbiter {
   }
   
   public Matrix getMatrix() throws UndefinedMatrixOpException {
-    // TODO
-    // If this is the root node, then return the 3x3 identity matrix
-    // If this is not the root node, should return the transformation 
-    // matrix for this orbiter (see the writeup for an idea of how to 
-    // do this). Make sure you've coded the Matrix class first. 
     if (parent == null) {
       return Matrix.identity(3);
     } else {
